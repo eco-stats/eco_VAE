@@ -6,7 +6,9 @@ plt.scatter(
     df["mu1"], df["mu2"], alpha=0.5, color="teal", edgecolors="none", s=15
 )
 
-max_labels_to_show = 19
+print(df.shape)
+
+max_labels_to_show = 20
 
 for idx, row in df.head(max_labels_to_show).iterrows():
     plt.annotate(
